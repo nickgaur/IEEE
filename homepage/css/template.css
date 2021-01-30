@@ -269,3 +269,35 @@ footer {
 
 /*==================================================================*/
 
+
+/*CLOSE BUTTON*/
+/*================================*/
+.navbar-icon .close {
+    display: none;
+    font-size: 1.25rem;
+    line-height: 1;
+    border-radius: 0.25rem;
+    background-color: transparent;
+    margin-right: 0;
+    color: #00629b;
+    margin-right: 4px !important;
+}
+
+.navbar-icon .close:hover {
+    color: #00629b;
+}
+
+.scrolled .close {
+    font-size: 1.25rem;
+    line-height: 1;
+    border-radius: 0.25rem;
+    background-color: transparent;
+    margin-right: 0;
+    color: #fff;
+    margin-right: 4px !important;
+}
+
+.scrolled .close:hover {
+    color: #fff;
+}
+/*================================*/
