@@ -3,23 +3,37 @@
 /*NAVBAR*/
 /*===================================================*/
 #mainNavbar {
-    background-color: #00629b;
+    background-color: rgb(248, 249, 250);
     padding: 8px 0;
+}
+/*===================================================*/
+
+/*AFTER SCROLLING NAVBAR*/
+/*===================================================*/
+#mainNavbar.scrolled {
+    background: rgb(0, 98, 155);
+    transition: background 1s;
 }
 /*===================================================*/
 
 /*MENU ICON*/
 /*===================================================*/
 .menu-icon {
+    color: #00629b;
+}
+/*===================================================*/
+
+/*MENU ICON AFTER SCROLLING NAVBAR*/
+/*===================================================*/
+#mainNavbar.scrolled .menu-icon {
     color: #fff;
 }
 /*===================================================*/
 
-
 /*NAVLINKS*/
 /*===================================================*/
  .navbar-nav .nav-link {
-    color: #fff;
+    color: #00629b;
     font-size: 18px;
 }
 
@@ -32,10 +46,11 @@
 /*NAVLINKS ON HOVERING BEFORE NAVBAR SCROLLED*/
 /*===================================================*/
  .navbar-nav .nav-link:hover {
-    color: #fff;
-    border-bottom: 3px solid #fff;
+    color: #00629b;
     padding: 7.5px 7.5px 0;
+    border-bottom: 3px solid #00629b;
 }
+
 /*===================================================*/
 
 
@@ -50,9 +65,8 @@
 /*NAVLINKS ON HOVERING BEFORE NAVBAR SCROLLED*/
 /*===================================================*/
 #mainNavbar.scrolled a.nav-link:hover {
-    color: #fff;
-    /*border-bottom: 3px solid #fff;*/
-    padding: 7px 7.5px 0;
+    border-bottom: 3px solid #fff;
+    padding: 7.5px 7.5px 0;
 }
 /*===================================================*/
 
@@ -73,7 +87,7 @@ footer {
 }
 
 .social-icons {
-    padding-left: 15px;
+    padding-left: 25px;
     font-size: 18px;
     text-align: center;
 }
@@ -107,7 +121,7 @@ footer {
 
 @media only screen and (max-width: 1024px) {
     body {
-        /*margin: 25px 0 0 !important;*/
+        margin: 25px 0 0 !important;
     }
     .footer-on-tablet {
         /*display: none;*/
@@ -182,8 +196,8 @@ footer {
     .navbar-nav .nav-link:hover {
         width: 50px;
         display: inline-block !important;
-        color: #fff;
-        background-color: #00629b !important;
+        color: #00629b;
+        background-color: none !important;
     }
 }
 
@@ -195,7 +209,6 @@ footer {
     footer {
         /*padding-top: 0 !important;*/
     }
-
     .footer-on-tablet {
         display: none;
     }
