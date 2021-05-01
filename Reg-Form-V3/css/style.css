@@ -795,13 +795,8 @@ input.error {
         -o-flex-direction: column;
         -ms-flex-direction: column;
     }
-/*    #form-input {
-        margin: 0 100px !important;
-    }*/
 }
 
-
-/*# sourceMappingURL=style.css.map */
 
 
 /*FORM*/
@@ -811,8 +806,8 @@ input.error {
     padding-bottom: 0;
 }
 
-#form-input {
-    margin: 0 25px 10px;
+.form-select {
+    margin-bottom: 0 !important;
 }
 
 .form-group {
@@ -834,7 +829,7 @@ input.error {
 /*==================================================================*/
 @media only screen and (min-width: 1316px){
     #membership-no {
-        margin-top: 42px;
+        /* margin-top: 42px; */
     }
 }
 
@@ -849,40 +844,42 @@ input.error {
         display: none;
     }
 
-    body {
-        /*margin: 25px 0 !important;*/
-    }
-
-
     #membership-no {
-        margin-top: 42px;
+        /* margin-top: 42px; */
         margin-bottom: 15px;
     }
 
-    /*form {
-        padding-top: 50px !important;
-    }*/
+
 }
 
 @media(max-width: 992px) {
-    #form-input {
+    /* #form-input {
         margin: 0 25px;
-    }
+    } */
     #membership-no {
         margin-top: 0;
+    }
+    .form-group {
+        width: 1000px !important;
     }
 }
 
 
 @media only screen and (min-width: 828px) and (max-width: 993px){
-    #membership-no {
+    /* #membership-no {
         margin-top: 42px;
+    } */
+    .form-group {
+        width: 1000px;
     }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 827px){
     #membership-no {
         margin-top: 0;
+    }
+    .form-group {
+        /* width: 1000px; */
     }
 }
 
@@ -893,15 +890,15 @@ input.error {
     #membership-no {
         margin-top: 0;
     }
+    .form-group {
+        margin: auto !important;
+        width: 100% !important;
+    }
+    .college {
+        margin-top: 20px;
+    }
 }
 
-/*@media(max-width: 600px){
-    .searches {
-        font-size: 30px !important;
-        font-weight: 400 !important;
-        margin-right: 3rem;
-    }
-}*/
 /*==================================================================*/
 
 
@@ -989,3 +986,7 @@ hr {
     width:300px;
 }
 */
+
+#form-group {
+    margin-bottom: 0;
+}

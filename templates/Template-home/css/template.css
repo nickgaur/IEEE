@@ -3,23 +3,37 @@
 /*NAVBAR*/
 /*===================================================*/
 #mainNavbar {
-    background-color: #00629b;
+    background-color: rgb(248, 249, 250);
     padding: 8px 0;
+}
+/*===================================================*/
+
+/*AFTER SCROLLING NAVBAR*/
+/*===================================================*/
+#mainNavbar.scrolled {
+    background: rgb(0, 98, 155);
+    transition: background 1s;
 }
 /*===================================================*/
 
 /*MENU ICON*/
 /*===================================================*/
 .menu-icon {
+    color: #00629b;
+}
+/*===================================================*/
+
+/*MENU ICON AFTER SCROLLING NAVBAR*/
+/*===================================================*/
+#mainNavbar.scrolled .menu-icon {
     color: #fff;
 }
 /*===================================================*/
 
-
 /*NAVLINKS*/
 /*===================================================*/
  .navbar-nav .nav-link {
-    color: #fff;
+    color: #00629b;
     font-size: 18px;
 }
 
@@ -32,28 +46,28 @@
 /*NAVLINKS ON HOVERING BEFORE NAVBAR SCROLLED*/
 /*===================================================*/
  .navbar-nav .nav-link:hover {
-    color: #fff;
-    border-bottom: 3px solid #fff;
+    color: #00629b;
     padding: 7.5px 7.5px 0;
+    border-bottom: 3px solid #00629b;
 }
+
 /*===================================================*/
 
 
 /*NAVLINKS AFTER NAVBAR SCROLLED*/
 /*===================================================*/
-/*#mainNavbar.scrolled .navbar-nav .nav-link {
+#mainNavbar.scrolled .navbar-nav .nav-link {
     color: #fff;
-}*/
+}
 /*===================================================*/
 
 
 /*NAVLINKS ON HOVERING BEFORE NAVBAR SCROLLED*/
 /*===================================================*/
-/*#mainNavbar.scrolled a.nav-link:hover {
-    color: #fff;
+#mainNavbar.scrolled a.nav-link:hover {
     border-bottom: 3px solid #fff;
-    padding: 7px 7.5px 0;
-}*/
+    padding: 7.5px 7.5px 0;
+}
 /*===================================================*/
 
 
@@ -73,19 +87,11 @@ footer {
 }
 
 .social-icons {
-    padding-left: 15px;
+    padding-left: 25px;
     font-size: 18px;
     text-align: center;
 }
 
-.copyright, .mail {
-    font-size: 16px;
-    font-weight: 600;
-}
-
-
-
-}
 /*============================*/
 
 
@@ -107,15 +113,11 @@ footer {
 
 @media only screen and (max-width: 1024px) {
     body {
-        /*margin: 25px 0 0 !important;*/
+        margin: 25px 0 0 !important;
     }
-    .footer-on-tablet {
-        /*display: none;*/
-    }
-    .searches-list:not(.init){
-    /*border: none !important;*/
-    line-height: 1;
-    }
+    /*.footer-on-tablet {
+        display: none;
+    }*/
     /*.w2-second {
         margin-left: 200px !important;
         margin-right: 200px !important;
@@ -168,7 +170,7 @@ footer {
         /*margin: auto 20px;*/
     }
     .about {
-        text-align: center;
+        text-align: center !important;
     }
 
     iframe {
@@ -182,10 +184,85 @@ footer {
     .navbar-nav .nav-link:hover {
         width: 50px;
         display: inline-block !important;
-        color: #fff;
-        background-color: #00629b !important;
+        color: #00629b;
+        background-color: none !important;
     }
 }
+
+/*========== NAVBAR MENUS ================*/
+.menus ul li:not(.init) {
+    padding: 0px 0px;
+}
+
+
+.menus ul li {
+    display: block !important;
+    background: none;
+    border: none;
+}
+
+.menus ul {
+    border: none;
+}
+
+
+
+.menus ul li:not(.init):hover{
+    background: none;
+    color: #00629b;
+}
+
+/*====================================*/
+
+/*========== ABOUT ================*/
+
+.about {
+    text-align: left;
+    font-size: 30px !important;
+    font-weight: 400 !important;
+}
+
+/*=================================*/
+
+
+/*========== ABOUT ================*/
+
+.about {
+    text-align: left;
+    font-size: 30px !important;
+    font-weight: 400 !important;
+}
+
+/*=================================*/
+
+/*========== SEARCHES ================*/
+.searches {
+        font-size: 30px !important;
+        font-weight: 400 !important;
+        /*margin-right: 20rem;*/
+    }
+
+.searches-list:not(.init){
+    border: none !important;
+    line-height: 2;
+}
+
+.searches-list li {
+    list-style: disc !important;
+    /*color: #fff;*/
+    text-align: center;
+    display: block !important;
+    background: none !important;
+    background-color: none !important;
+}
+
+.searches-list li a {
+    color: #fff;
+}
+
+/*.text-center > p {
+    font-weight: 400;
+}*/
 
 
 
@@ -195,7 +272,6 @@ footer {
     footer {
         /*padding-top: 0 !important;*/
     }
-
     .footer-on-tablet {
         display: none;
     }
@@ -254,8 +330,6 @@ footer {
     /*========================*/
 }
 
-/*==================================================================*/
-
 /*CLOSE BUTTON*/
 /*================================*/
 .navbar-icon .close {
@@ -265,12 +339,56 @@ footer {
     border-radius: 0.25rem;
     background-color: transparent;
     margin-right: 0;
-    color: #fff;
+    color: #00629b;
     margin-right: 4px !important;
 }
 
 .navbar-icon .close:hover {
-    color: #fff;
+    color: #00629b;
 }
 
+.scrolled .close {
+    font-size: 1.25rem;
+    line-height: 1;
+    border-radius: 0.25rem;
+    background-color: transparent;
+    margin-right: 0;
+    color: #fff;
+    margin-right: 4px !important;
+}
+
+.scrolled .close:hover {
+    color: #fff;
+}
 /*================================*/
+
+
+hr { 
+  width: 33% !important;
+  border: 1px solid rgba(255,255,255,0.1) !important;
+}
+
+/*========== LOCATE US ================*/
+.locate {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.searches-list > ul > li{
+    text-align: center;
+    /*line-height: 1.2;*/
+}
+
+/*=====================================*/
+
+#text-center {
+    font-weight: 600;
+}
+
+.searches-list {
+padding: 5px 10px;
+}
+
+.social-icons > a{
+    font-weight: 400 !important;
+}

@@ -1,0 +1,398 @@
+/*NAVBAR*/
+/*===================================================*/
+#mainNavbar {
+    background-color: rgb(248, 249, 250);
+    padding: 8px 0;
+  }
+  /*===================================================*/
+  
+  /*AFTER SCROLLING NAVBAR*/
+  /*===================================================*/
+  #mainNavbar.scrolled {
+    background: rgb(0, 98, 155);
+    transition: background 1s;
+  }
+  /*===================================================*/
+  
+  /*MENU ICON*/
+  /*===================================================*/
+  .menu-icon {
+    color: #00629b;
+  }
+  /*===================================================*/
+  
+  /*MENU ICON AFTER SCROLLING NAVBAR*/
+  /*===================================================*/
+  #mainNavbar.scrolled .menu-icon {
+    color: #fff;
+  }
+  /*===================================================*/
+  
+  /*NAVLINKS*/
+  /*===================================================*/
+  .navbar-nav .nav-link {
+    color: #00629b;
+    font-size: 18px;
+  }
+  
+  .menus {
+    margin-right: 80px;
+  }
+  /*===================================================*/
+  
+  /*NAVLINKS ON HOVERING BEFORE NAVBAR SCROLLED*/
+  /*===================================================*/
+  .navbar-nav .nav-link:hover {
+    color: #00629b;
+    padding: 7.5px 7.5px 0;
+    border-bottom: 3px solid #00629b;
+  }
+  
+  /*===================================================*/
+  
+  /*NAVLINKS AFTER NAVBAR SCROLLED*/
+  /*===================================================*/
+  #mainNavbar.scrolled .navbar-nav .nav-link {
+    color: #fff;
+  }
+  /*===================================================*/
+  
+  /*NAVLINKS ON HOVERING BEFORE NAVBAR SCROLLED*/
+  /*===================================================*/
+  #mainNavbar.scrolled a.nav-link:hover {
+    border-bottom: 3px solid #fff;
+    padding: 7.5px 7.5px 0;
+  }
+  /*===================================================*/
+  
+  /*footer container*/
+  /*===========================*/
+  footer {
+    padding-bottom: 10px;
+    /*text-align: center;*/
+    padding-top: 20px;
+  }
+  
+  .footer-text {
+    /*margin: auto 50px;*/
+    font-size: 16px;
+    font-weight: 600;
+    /*text-align: left;*/
+  }
+  
+  .social-icons {
+    padding-left: 25px;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  /*============================*/
+  
+  /*NAVBAR*/
+  /*======================*/
+  .navbar-brand {
+    margin-left: 16px;
+  }
+  
+  .navbar-icon {
+    margin-right: 16px;
+  }
+  /*======================*/
+  
+  /*RESPONSIVE CSS*/
+  /*==================================================================*/
+  
+  @media only screen and (max-width: 1024px) {
+    body {
+      margin: 25px 0 0 !important;
+    }
+    /*.footer-on-tablet {
+          display: none;
+      }*/
+    /*.w2-second {
+          margin-left: 200px !important;
+          margin-right: 200px !important;
+      }*/
+  }
+  
+  @media (max-width: 992px) {
+    .footer-hidden {
+      display: none;
+    }
+  
+    .footer-on-tablet {
+      display: none;
+    }
+  
+    .navbar-nav .nav-link {
+      padding: 7.5px 0;
+      margin-left: 20px;
+    }
+    .navbar-nav .nav-link:hover {
+      background-color: rgb(248, 249, 250);
+      color: #00629b;
+      border-bottom: none;
+      padding: 7.5px 0;
+    }
+    #mainNavbar.scrolled .navbar-nav .nav-link:hover {
+      background-color: #00629b;
+      color: #fff;
+      border-bottom: none;
+      padding: 7.5px 0;
+    }
+  
+    .gmap_canvas {
+      position: relative;
+      height: 150px;
+      width: 300px;
+    }
+    .locate-div {
+      width: 33.33%;
+      margin-bottom: 20px;
+    }
+    .locate {
+      text-align: center;
+    }
+  
+    .about-div {
+      width: 30% !important;
+      text-align: center;
+      /*margin: auto 20px;*/
+    }
+    .about {
+      text-align: center !important;
+    }
+  
+    iframe {
+      height: 100%;
+      width: 100%;
+    }
+    .nav-item {
+      width: 0px;
+    }
+  
+    .navbar-nav .nav-link:hover {
+      width: 50px;
+      display: inline-block !important;
+      color: #00629b;
+      background-color: none !important;
+    }
+  }
+  
+  /*========== NAVBAR MENUS ================*/
+  .menus ul li:not(.init) {
+    padding: 0px 0px;
+  }
+  
+  .menus ul li {
+    display: block !important;
+    background: none;
+    border: none;
+  }
+  
+  .menus ul {
+    border: none;
+  }
+  
+  .menus ul li:not(.init):hover {
+    background: none;
+    color: #00629b;
+  }
+  
+  /*====================================*/
+  
+  /*========== ABOUT ================*/
+  
+  .about {
+    text-align: left;
+    font-size: 30px !important;
+    font-weight: 400 !important;
+  }
+  
+  /*=================================*/
+  
+  /*========== ABOUT ================*/
+  
+  .about {
+    text-align: left;
+    font-size: 30px !important;
+    font-weight: 400 !important;
+  }
+  
+  /*=================================*/
+  
+  /*========== SEARCHES ================*/
+  .searches {
+    font-size: 30px !important;
+    font-weight: 400 !important;
+    /*margin-right: 20rem;*/
+  }
+  
+  .searches-list:not(.init) {
+    border: none !important;
+    line-height: 2;
+  }
+  
+  .searches-list li {
+    list-style: disc !important;
+    /*color: #fff;*/
+    text-align: center;
+    display: block !important;
+    background: none !important;
+    background-color: none !important;
+  }
+  
+  .searches-list li a {
+    color: #fff;
+  }
+  
+  /*.text-center > p {
+      font-weight: 400;
+  }*/
+  
+  @media (max-width: 768px) {
+    /*FOOTER*/
+    /*=======================*/
+    footer {
+      /*padding-top: 0 !important;*/
+    }
+    .footer-on-tablet {
+      display: none;
+    }
+    .footer-hidden {
+      display: hidden;
+    }
+    .about {
+      font-size: 25px !important;
+      font-weight: 400 !important;
+      text-align: center;
+      width: 100%;
+    }
+    .searches {
+      font-size: 25px !important;
+      font-weight: 400 !important;
+    }
+    .footer-text {
+      margin: auto 20px 20px;
+    }
+  
+    .about-div {
+      width: 100% !important;
+      text-align: center;
+      /*margin: auto 20px;*/
+    }
+    .locate-div {
+      width: 100% !important;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .locate {
+      margin-bottom: 15px;
+    }
+    .search-div {
+      display: none;
+    }
+    /*.mapouter{
+          position:relative;
+          height: 300px;
+          width: 100%;
+      }*/
+  
+    .gmap_canvas {
+      position: relative;
+      height: 250px;
+      width: 100%;
+    }
+  
+    iframe {
+      height: 100%;
+      width: 100%;
+    }
+  
+    /*========================*/
+  }
+  
+  /*CLOSE BUTTON*/
+  /*================================*/
+  .navbar-icon .close {
+    display: none;
+    font-size: 1.25rem;
+    line-height: 1;
+    border-radius: 0.25rem;
+    background-color: transparent;
+    margin-right: 0;
+    color: #00629b;
+    margin-right: 4px !important;
+  }
+  
+  .navbar-icon .close:hover {
+    color: #00629b;
+  }
+  
+  .scrolled .close {
+    font-size: 1.25rem;
+    line-height: 1;
+    border-radius: 0.25rem;
+    background-color: transparent;
+    margin-right: 0;
+    color: #fff;
+    margin-right: 4px !important;
+  }
+  
+  .scrolled .close:hover {
+    color: #fff;
+  }
+  /*================================*/
+  
+  hr {
+    width: 33% !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  /*========== LOCATE US ================*/
+  .locate {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  
+  .searches-list > ul > li {
+    text-align: center;
+    /*line-height: 1.2;*/
+  }
+  
+  /*=====================================*/
+  
+  #text-center {
+    font-weight: 600;
+  }
+  
+  .searches-list {
+    padding: 5px 10px;
+  }
+  
+  .social-icons > a {
+    font-weight: 400 !important;
+  }
+  
+  body {
+      margin-top: 25px;
+  }
+  
+  .center {
+      margin: auto;
+      width: 60%;
+      padding: 10px;
+  }
+  
+  footer {
+      margin-top: 50px;
+  }
+  
+  .w3-indigo {
+      margin-left: 0;
+      margin-right: 0;
+      color: #fff !important;
+      background-color: rgb(0, 98, 155) !important;
+  }
+  
