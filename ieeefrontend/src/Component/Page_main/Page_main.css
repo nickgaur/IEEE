@@ -1,0 +1,56 @@
+.page_main {
+    padding-top: 55px;
+}
+
+/* .img {
+    max-height: 2rem !important;
+    max-width: 30rem;
+    margin-left: 50px;
+    object-fit: cover;
+} */
+.col-sm-6 > img {
+    max-height: 24rem;
+    object-fit: cover;
+}
+.col-sm-6 {
+    align-items: center;
+}
+
+.head {
+    display: flex;
+    flex-wrap: wrap;
+}
+.page_heading {
+    font-weight: 100;
+    margin-bottom: 30px;
+    color: rgb(88, 88, 88);
+}
+
+.Cards {
+    color: rgb(82, 79, 79);
+}
+
+.close {
+    position: fixed;
+    margin-left: 90%;
+    /* right: 20; */
+}
+
+.cl {
+    width: 50px !important;
+    color: red;
+    font-size: 30px;
+}
+
+.card-text {
+    margin: 8px;
+    color: gray;
+}
+
+.card-text > h5 {
+    color: rgb(73, 72, 72);
+}
+
+.thumbs {
+    display: none;
+}
